@@ -73,13 +73,18 @@ h1 span{display:block;color:#7cdbff;font-size:.76em;line-height:1.5;letter-spaci
 .disclaimer{font-size:11px;color:#6d8192;line-height:1.55;margin:4px 0 0}
 @media(max-width:370px){.shell{padding-inline:15px}.nav-card{padding:12px}.nav-copy strong{font-size:14px}.nav-copy small{font-size:10px}.brand-logo{height:84px;width:84px}}
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{transition:none!important;scroll-behavior:auto!important}}
+
+/* Logo oficial redondo sobre fundo transparente */
+.brand-logo{width:120px;height:120px;min-width:120px;border-radius:50%;margin:0 auto 19px;background:transparent;border:0;box-shadow:0 12px 35px #00000030;overflow:hidden;display:grid;place-items:center}
+.brand-logo:before{display:none!important}
+.brand-logo img{width:100%;height:100%;object-fit:cover;display:block;border-radius:50%}
 </style>
 </head>
 <body>
 <div class="background" aria-hidden="true"></div>
 <main class="shell">
 <header class="brand-area">
-<div class="brand-logo" aria-label="Identidade I&C"><span class="letters">I&amp;C</span><span class="flake">❄</span></div>
+<div class="brand-logo" aria-label="Logotipo oficial redondo da I&C Climatização"><img src="../logo-ic-redondo.png" alt="Logotipo oficial da I&C Engenharia e Soluções em Climatização" width="120" height="120" fetchpriority="high"></div>
 <div class="eyebrow">Engenharia e soluções</div>
 <h1>I&amp;C Climatização<span>Conforto • Qualidade • Bem-estar</span></h1>
 <p>Soluções para cuidar do seu ambiente com qualidade, atenção e conforto em cada detalhe.</p>
