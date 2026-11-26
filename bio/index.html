@@ -78,6 +78,41 @@ h1 span{display:block;color:#7cdbff;font-size:.76em;line-height:1.5;letter-spaci
 .brand-logo{width:120px;height:120px;min-width:120px;border-radius:50%;margin:0 auto 19px;background:transparent;border:0;box-shadow:0 12px 35px #00000030;overflow:hidden;display:grid;place-items:center}
 .brand-logo:before{display:none!important}
 .brand-logo img{width:100%;height:100%;object-fit:cover;display:block;border-radius:50%}
+
+/* Bio editorial inspirada no padrão visual ToscanoTech: painéis glass e layout compacto */
+:root{--glass:rgba(255,255,255,.068);--glass-line:rgba(193,227,255,.19)}
+body{background:#061329}
+.background{background:radial-gradient(ellipse 55% 32% at 50% 0%,rgba(17,108,196,.22),transparent 90%),radial-gradient(ellipse 65% 35% at 110% 95%,rgba(18,119,183,.13),transparent 90%),linear-gradient(145deg,#061329 0%,#081b38 65%,#07152d 100%)}
+.background:before{width:530px;height:530px;top:-355px;border-color:#7ecaff15;box-shadow:0 0 0 70px #ffffff03,0 0 0 145px #ffffff02}
+.background:after{opacity:.45}
+.shell{max-width:492px;padding:35px 20px calc(30px + env(safe-area-inset-bottom,0px))}
+.brand-area{margin:3px 0 28px}
+.brand-logo{width:104px;height:104px;min-width:104px;margin-bottom:20px;border:1px solid #d3ecff30;box-shadow:0 12px 40px #0005,0 0 38px #1365b01a}
+.brand-logo img{width:100%;height:100%;object-fit:cover}
+.eyebrow{margin:0 0 9px;color:#a7d9fc;letter-spacing:2px;font-size:9px}
+h1{font-size:29px;line-height:1.24;letter-spacing:-.9px}
+h1 span{font-size:13px;color:#7ecffe;letter-spacing:.15px;font-weight:700;margin-top:6px}
+.brand-area p{font-size:12.5px;line-height:1.8;color:#b9cae0;max-width:350px;margin:13px auto 0}
+.divider{font-size:10px;margin:5px 0 15px;color:#a4c4df;letter-spacing:1.7px}
+.links{gap:12px}
+.nav-card{min-height:76px;padding:13px 15px;border-radius:17px;background:var(--glass);border:1px solid var(--glass-line);color:#f4f9ff;box-shadow:none;backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);transition:background .25s,border-color .25s,transform .25s}
+.nav-card:hover,.nav-card:focus-visible{background:rgba(255,255,255,.12);border-color:#71c9fc85;box-shadow:0 11px 30px #0002}
+.nav-icon{width:46px;height:46px;background:rgba(74,162,240,.13);color:#78cafe;border:1px solid rgba(140,205,255,.12);border-radius:13px}
+.nav-icon svg{width:22px;height:22px}
+.nav-copy strong{font-size:15px;color:#fff;letter-spacing:-.1px}
+.nav-copy small{font-size:11px;color:#c2cfe0}
+.nav-arrow{background:transparent;color:#b8d9f4;font-size:19px;width:24px;height:24px}
+.quote-divider{margin:25px 0 15px;font-size:10px;color:#a9cae4}
+.whats-cta{min-height:77px;background:linear-gradient(115deg,#0c69cb,#1b82e2);border:1px solid #90d4ff48;box-shadow:0 10px 30px rgba(5,86,193,.26);border-radius:17px}
+.whats-cta:hover{box-shadow:0 16px 36px rgba(5,86,193,.35)}
+.whats-cta:before{content:"";width:4px;align-self:stretch;border-radius:3px;background:var(--red);opacity:.95}
+.whats-cta-text strong{font-size:16px}
+.whats-cta-text small{color:#e4f4ff}
+.legal{padding-top:30px;color:#7f99b5}
+.legal strong{color:#b5d9f5}
+.legal .signature{color:#8fd9fd}
+@media(max-width:370px){.shell{padding-inline:16px}.nav-card{padding:12px}.nav-copy strong{font-size:14px}.brand-logo{width:96px;height:96px;min-width:96px}}
+@media(prefers-reduced-motion:reduce){.nav-card,.whats-cta{transition:none}}
 </style>
 </head>
 <body>
@@ -89,7 +124,7 @@ h1 span{display:block;color:#7cdbff;font-size:.76em;line-height:1.5;letter-spaci
 <h1>I&amp;C Climatização<span>Conforto • Qualidade • Bem-estar</span></h1>
 <p>Soluções para cuidar do seu ambiente com qualidade, atenção e conforto em cada detalhe.</p>
 </header>
-<div class="divider"><span>CONHEÇA A I&amp;C</span></div>
+<div class="divider"><span>ACESSO RÁPIDO</span></div>
 <nav class="links" aria-label="Navegação da I&C">
 <a class="nav-card" href="/#sobre"><span class="nav-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="3.5"/><path d="M4.5 20c0-4 3.1-6.3 7.5-6.3s7.5 2.3 7.5 6.3"/></svg></span><span class="nav-copy"><strong>Sobre nós</strong><small>Conheça nossa empresa</small></span><span class="nav-arrow">↗</span></a>
 <a class="nav-card" href="/#servicos"><span class="nav-icon"><svg viewBox="0 0 24 24"><path d="M14 3.5a5 5 0 0 0-6.5 6.4L3.5 14a2.2 2.2 0 0 0 3.1 3.1l4-4a5 5 0 0 0 6.4-6.5l-3.3 3.3-3-3L14 3.5Z"/><path d="m14.5 15 5.7 5.7"/></svg></span><span class="nav-copy"><strong>Serviços</strong><small>Instalação, higienização e manutenção</small></span><span class="nav-arrow">↗</span></a>
